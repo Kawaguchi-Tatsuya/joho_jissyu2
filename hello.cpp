@@ -3,8 +3,6 @@ using namespace std;     // std という名前空間を使用する，という
 
 int main(void)
 {
-    cout << "Hello World!" << endl;
-    cout << "Bye World!" << endl;
-    
+    cout << "Hello World!" << endl;    
     return 0;
 }
