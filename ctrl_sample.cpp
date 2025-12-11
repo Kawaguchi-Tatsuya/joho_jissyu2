@@ -11,10 +11,10 @@
 // (2) 制御周期 dt を，系の時定数 T より長くしてみよう．
 
 const double Kp = 1.5;    // gain
-const double dt = 10;  // 制御周期(s)
+const double dt = 10;     // 制御周期(s)
 
-const double SV = 25.0;  // 目標値Set valiable. 例えばエアコンの設定温度など．
-const double T = 300;    // 系の時定数(s)
+const double SV = 25.0;   // 目標値Set valiable. 例えばエアコンの設定温度など．
+const double T = 300;     // 系の時定数(s)
 
 const double T_end = 1000;   // シミュレーション終了時刻(s)
 
@@ -35,7 +35,7 @@ int main()
 	//	出力先をファイルに変更すること．
 	//	グローバル変数の各種パラメータもファイルに記録しておくと良い．
 
-	double PVn_current=0;  // 現在のPV（室温など）初期値をここで設定．
+	double PVn_current = 5.0;   // 現在のPV（室温など）初期値をここで設定．
 	double PVn1 = PVn_current;	// previous PV, i.e., PVn-1
 
 	printf("SV= %lf, PV0=%lf\n\n", SV, PVn1);
